@@ -25,7 +25,7 @@ import serenoMini from "/sereno-logo-mini.png";
 const Hero = () => {
   return (
     <div className="w-full min-h-screen bg-[#faf6ec] overflow-hidden">
-      <h1 className="text-6xl text-[#83735B] text-center my-7">
+      <h1 className="lg:text-6xl text-5xl text-[#83735B] text-center my-7">
         Comprehensive Marketing Plan
       </h1>
       <div className="flex flex-col lg:flex-row items-center justify-around p-10 lg:space-x-10">
@@ -194,15 +194,17 @@ const Hero = () => {
           className="w-full h-full"
         />
       </Carousel>
-      <div className="grid grid-cols-1 grid-rows-1 lg:gap-4 my-20">
+      <div className="grid grid-cols-1 grid-rows-1 lg:gap-4 gap-24 my-20">
         <div className="relative">
           <img
             src={Image1}
             alt="image1"
-            className="w-full h-96 lg:h-auto brightness-50"
+            className="w-full lg:h-full h-screen  brightness-50"
           />
           <div className="absolute inset-0 flex flex-col space-y-10 items-center justify-center">
-            <p className="text-white text-5xl font-bold">The Selling Process</p>
+            <p className="text-white text-5xl text-center font-bold">
+              The Selling Process
+            </p>
             <div className="grid grid-cols-3 font-karla grid-rows-2 gap-4 text-center">
               <div className="text-white flex flex-col">
                 <span className="text-5xl text-center pb-2">1</span>
@@ -233,7 +235,7 @@ const Hero = () => {
           <img
             src={Image2}
             alt="image2"
-            className="w-full lg:h-auto brightness-50"
+            className="w-full lg:h-full h-screen brightness-50"
           />
           <div className="absolute inset-0 flex flex-col space-y-10 items-center justify-center overflow-hidden">
             <p className="text-white text-5xl font-bold text-center">
@@ -339,7 +341,7 @@ const Hero = () => {
         />
         <div className="flex items-center bg-[#737057] justify-around lg:p-10 space-x-10">
           <div className="flex flex-col items-center justify-center space-y-5">
-            <h2 className="font-semibold text-6xl text-[#fffdf7]">
+            <h2 className="font-semibold text-5xl text-center lg:text-6xl text-[#fffdf7]">
               The Hansen Partners Communications Tablet
             </h2>
             <p className="text-xl p-4 font-karla text-[#fffdf7]">
@@ -357,7 +359,7 @@ const Hero = () => {
 
         <section className="my-5">
           <h1 className="text-6xl text-[#83735B] text-center">Benefits</h1>
-          <ul className="list-outside list-disc ms-4 text-lg px-24 lg:px-32 font-karla my-7">
+          <ul className="list-outside list-disc ms-4 text-lg px-10 lg:px-32 font-karla my-7">
             <li className="mb-2 text-[#83735B]">
               Review all documents and sign in the comfort of your home or
               anywhere.
@@ -410,7 +412,7 @@ const Hero = () => {
               internationally.
             </p>
           </div>
-          <section className="flex flex-col lg:flex-row lg:p-10 lg:space-x-5">
+          <section className="flex flex-col lg:flex-row lg:p-10 p-12 lg:space-x-5 space-y-10 lg:space-y-0">
             <div className="space-y-5 lg:w-6/12">
               <h4 className="text-3xl text-center">Local Exposure</h4>
               <p className="text-lg font-karla">
@@ -449,7 +451,7 @@ const Hero = () => {
         {/* State Partners Section */}
         <section className="flex flex-col lg:flex-row w-full justify-around">
           <div>
-            <div className="flex items-center justify-evenly w-full my-6">
+            <div className="flex flex-col lg:flex-row items-center justify-evenly w-full my-6">
               <img src={state1} className="w-44" alt="" />
               <img src={state2} className="w-44" alt="" />
               <img src={state3} className="w-44" alt="" />
@@ -558,7 +560,7 @@ const Hero = () => {
           <div className="flex flex-col lg:flex-row items-center justify-evenly mt-10 space-y-5">
             <div className="flex flex-col items-center space-y-6">
               <h2 className="text-xl font-semibold uppercase">Address</h2>
-              <p className="text-lg font-karla">
+              <p className="text-lg text-center font-karla">
                 4733 Chabot Drive #100 Pleasanton <br /> CA 94588 Julie
                 Hansen-Orvis | CA DRE# 00934447
               </p>
@@ -652,7 +654,7 @@ const Hero = () => {
             <img src={serenoMini} alt="serenoMini" className="w-10" />
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <h2 className="text-lg">
+            <h2 className="text-lg text-center">
               Website Designed & Developed by Luxury Presence
             </h2>
             <h2 className="text-lg">Copyright &copy;2024 | Privacy Policy </h2>
