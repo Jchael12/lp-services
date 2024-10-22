@@ -205,7 +205,7 @@ const Hero = () => {
             <p className="text-white text-5xl text-center font-bold">
               The Selling Process
             </p>
-            <div className="grid grid-cols-3 font-karla grid-rows-2 gap-4 text-center">
+            <div className="grid grid-cols-3 font-karla grid-rows-2 gap-4 p-4 text-center">
               <div className="text-white flex flex-col">
                 <span className="text-5xl text-center pb-2">1</span>
                 <h1>Initial Consultation and Planning</h1>
@@ -241,7 +241,7 @@ const Hero = () => {
             <p className="text-white text-5xl font-bold text-center">
               The Buying Process
             </p>
-            <ul className="relative flex w-full ml-10 lg:ml-36 gap-x-2 font-karla">
+            <ul className="relative flex w-full ml-2 lg:ml-36 gap-x-2 p-4 font-karla">
               <li className="group flex-1 shrink basis-0">
                 <div className="min-h-7.5 min-w-7.5 inline-flex w-full items-center align-middle text-sm">
                   <span className="border border-neutral-200 text-white size-7.5 flex flex-shrink-0 items-center justify-center rounded-full text-sm font-medium">
