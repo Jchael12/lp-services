@@ -4,15 +4,21 @@ import Logo from "/jhsereno-light.png";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [showOnScrollUp, setShowOnScrollUp] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true); // Change background color when scrolled down
-      } else {
-        setIsScrolled(false); // Keep backdrop when near the top
+      const currentScrollY = window.scrollY;
+
+      // Show when scrolling up, hide when scrolling down
+      if (currentScrollY < lastScrollY) {
+        setShowOnScrollUp(true);
+      } else if (currentScrollY > lastScrollY) {
+        setShowOnScrollUp(false);
       }
+      // Update last scroll position
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,7 +26,7 @@ const Sidebar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   //styling for sidebar element
   const sidebarStyle =
@@ -32,11 +38,9 @@ const Sidebar = () => {
     <>
       {/* Button to toggle sidebar */}
       <div
-        className={`flex items-center justify-between w-full fixed p-5 shadow-lg z-50 transition-all duration-500 ${
-          isScrolled
-            ? "bg-[#737057]"
-            : "bg-opacity-10 backdrop-filter backdrop-blur-lg"
-        }`}
+        className={`flex items-center justify-between w-full fixed p-5 shadow-lg z-50 transition-transform duration-500 ${
+          showOnScrollUp ? "translate-y-0" : "-translate-y-full"
+        } bg-opacity-10 backdrop-filter backdrop-blur-lg`}
       >
         <img src={Logo} alt="logo" className="w-44" />
         <div className="flex items-center justify-between gap-5">

@@ -18,10 +18,13 @@ import state3 from "/state3.jpg";
 
 import services from "/services.png";
 import mockup from "/mockup.png";
+import realtor from "/realtor.png";
+import housing from "/housing.png";
+import serenoMini from "/sereno-logo-mini.png";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-screen bg-[#fffdf7]">
+    <div className="w-full min-h-screen bg-[#faf6ec]">
       <h1 className="text-6xl text-[#83735B] text-center my-7">
         Comprehensive Marketing Plan
       </h1>
@@ -510,10 +513,138 @@ const Hero = () => {
           alt="services"
           className="w-full h-auto brightness-75"
         />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-[#faf6ec] text-5xl  font-bold">Work with Us</p>
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <h1 className="text-[#faf6ec] text-5xl  font-bold">Work with Us</h1>
+          <p className="text-center text-[#faf6ec] text-lg w-6/12 my-3 font-karla">
+            With decades of experience in luxurious Tri Valley real estate, our
+            team is here to ensure that your dreams are a reality. Let us guide
+            you through your home buying journey, contact us today!
+          </p>
+          <button className="btn btn-primary btn-lg glass hover:bg-[#737057] hover:text-[#faf6ec]">
+            Contact Us
+          </button>
         </div>
       </div>
+
+      {/* footer */}
+      <section className="w-full h-[500px] bg-[#737057]">
+        <div className="text-[#faf6ec]">
+          <div className="p-10 flex flex-col items-center space-y-9 justify-center">
+            <h1 className="text-5xl font-medium text-center">
+              Julie Hansen Partnership
+            </h1>
+            <p className="font-karla text-lg w-5/12">
+              An elite group of the East Bay’s most talented and visionary real
+              estate professionals believed buyers and sellers deserved more
+              from their real estate company. More service. More resources. More
+              integrity. More global reach. In a word, more of everything people
+              should expect when they buy or sell their homes.
+            </p>
+          </div>
+          <div className="flex items-center justify-evenly mt-10">
+            <div className="flex flex-col items-center space-y-6">
+              <h2 className="text-xl font-semibold uppercase">Address</h2>
+              <p className="text-lg font-karla">
+                4733 Chabot Drive #100 Pleasanton <br /> CA 94588 Julie
+                Hansen-Orvis | CA DRE# 00934447
+              </p>
+            </div>
+            <div className="flex flex-col items-center space-y-6">
+              <h2 className="text-xl font-semibold uppercase">
+                Contact Information
+              </h2>
+              <p className="text-lg font-karla">
+                (925) 553-6707 <br /> luxuryhomesinwc@icloud.com
+              </p>
+            </div>
+            <section className="space-x-2">
+              <button
+                className="btn btn-circle btn-gradient bg-[#f3efe4]"
+                aria-label="Circle Gradient Icon Button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#737057"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-facebook"
+                >
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </button>
+              <button
+                className="btn btn-circle btn-gradient bg-[#f3efe4]"
+                aria-label="Circle Gradient Icon Button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#737057"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-linkedin"
+                >
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </button>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      {/* footer 2 */}
+      <section className="w-full flex items-center justify-center h-[500px] bg-[#faf6ec]">
+        <div className="text-[#737057] h-full flex flex-col space-y-5 items-center justify-center">
+          <div className="py-5 px-10 flex flex-col items-center space-y-4 justify-center">
+            <h1 className="text-5xl font-medium text-center">Newsletter</h1>
+            <p className="font-karla text-lg">
+              Subscribe to our Newsletter for latest news and updates. Stay
+              tuned!
+            </p>
+          </div>
+          <label className="form-control flex gap-2 w-6/12">
+            <input type="checkbox" className="checkbox" />
+            <span className="label -mt-1 cursor-pointer flex items-center justify-center pt-0">
+              <span className="label-text-alt font-karla">
+                By providing Julie Hansen Partnership your contact information,
+                you acknowledge and agree to our Privacy Policy and consent to
+                receiving marketing communications, including through automated
+                calls, texts, and emails, some of which may use artificial or
+                prerecorded voices. This consent isn’t necessary for purchasing
+                any products or services and you may opt out at any time. To opt
+                out from texts, you can reply, ‘stop’ at any time. To opt out
+                from emails, you can click on the unsubscribe link in the
+                emails. Message and data rates may apply.
+              </span>
+            </span>
+          </label>
+          <button className="btn btn-lg waves waves-light bg-[#737057] hover:bg-[#faf6ec] text-[#faf6ec] hover:text-[#737057]">
+            Subscribe
+          </button>
+          <div className="flex items-center justify-center space-x-10 py-7">
+            <img src={realtor} alt="realtor" className="w-10" />
+            <img src={housing} alt="housing" className="w-10" />
+            <img src={serenoMini} alt="serenoMini" className="w-10" />
+          </div>
+          <div className="flex items-center justify-between gap-10">
+            <h2 className="text-lg">
+              Website Designed & Developed by Luxury Presence
+            </h2>
+            <h2 className="text-lg">Copyright &copy;2024 | Privacy Policy </h2>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
