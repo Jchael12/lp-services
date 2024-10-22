@@ -42,7 +42,7 @@ const Sidebar = () => {
           showOnScrollUp ? "translate-y-0" : "-translate-y-full"
         } bg-opacity-10 backdrop-filter backdrop-blur-lg`}
       >
-        <img src={Logo} alt="logo" className="w-44" />
+        <img src={Logo} alt="logo" className="w-44 hidden lg:block" />
         <div className="flex items-center justify-between gap-5">
           <div className="relative">
             <input

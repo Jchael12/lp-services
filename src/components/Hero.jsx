@@ -24,12 +24,16 @@ import serenoMini from "/sereno-logo-mini.png";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-screen bg-[#faf6ec]">
+    <div className="w-full min-h-screen bg-[#faf6ec] overflow-hidden">
       <h1 className="text-6xl text-[#83735B] text-center my-7">
         Comprehensive Marketing Plan
       </h1>
-      <div className="flex items-center justify-around p-10 space-x-10">
-        <img src={Response} className="w-6/12" alt="Responsive Photo" />
+      <div className="flex flex-col lg:flex-row items-center justify-around p-10 lg:space-x-10">
+        <img
+          src={Response}
+          className="w-full lg:w-6/12"
+          alt="Responsive Photo"
+        />
         <div className="flex flex-col items-center justify-center space-y-3">
           <h2 className="font-semibold text-6xl text-[#83735B]">Responsive</h2>
           <p className="text-2xl font-karla text-[#83735B]">
@@ -37,17 +41,21 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-around p-10 space-x-10">
+      <div className="flex flex-col lg:flex-row items-center justify-around p-10 lg:space-x-10">
         <div className="flex flex-col items-center justify-center space-y-3">
           <h2 className="font-semibold text-6xl text-[#83735B]">Syndication</h2>
           <p className="text-2xl font-karla text-[#83735B]">
             I market your property locally, nationally, and internationally
           </p>
         </div>
-        <img src={Marketing} className="w-6/12" alt="Marketing Photo" />
+        <img
+          src={Marketing}
+          className="w-full lg:w-6/12"
+          alt="Marketing Photo"
+        />
       </div>
       {/* 2 grids */}
-      <section className="flex items-center justify-evenly my-20">
+      <section className="flex flex-col lg:flex-row items-center justify-evenly my-20">
         <div className="flex flex-col items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,10 +77,10 @@ const Hero = () => {
             />
           </svg>
 
-          <h2 className="font-semibold text-3xl text-[#83735B] mb-2">
+          <h2 className="font-semibold text-3xl font-playfair text-[#83735B] mb-2">
             Virtual Tour
           </h2>
-          <p className="text-lg font-karla text-[#83735B]">
+          <p className="text-lg font-karla text-[#83735B] text-center">
             Let&apos;s make your home stand out with a high quality virtual
             tour.
           </p>
@@ -92,7 +100,7 @@ const Hero = () => {
               d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
             />
           </svg>
-          <h2 className="font-semibold text-3xl text-[#83735B] mb-2">
+          <h2 className="font-semibold font-playfair text-3xl text-[#83735B] mb-2">
             Photography
           </h2>
           <p className="text-lg font-karla text-[#83735B] text-center">
@@ -186,12 +194,12 @@ const Hero = () => {
           className="w-full h-full"
         />
       </Carousel>
-      <div className="grid grid-cols-1 grid-rows-1 gap-4 my-20">
+      <div className="grid grid-cols-1 grid-rows-1 lg:gap-4 my-20">
         <div className="relative">
           <img
             src={Image1}
             alt="image1"
-            className="w-full h-auto brightness-50"
+            className="w-full h-96 lg:h-auto brightness-50"
           />
           <div className="absolute inset-0 flex flex-col space-y-10 items-center justify-center">
             <p className="text-white text-5xl font-bold">The Selling Process</p>
@@ -225,13 +233,13 @@ const Hero = () => {
           <img
             src={Image2}
             alt="image2"
-            className="w-full h-auto brightness-50"
+            className="w-full lg:h-auto brightness-50"
           />
           <div className="absolute inset-0 flex flex-col space-y-10 items-center justify-center overflow-hidden">
             <p className="text-white text-5xl font-bold text-center">
               The Buying Process
             </p>
-            <ul className="relative flex w-full ml-36 gap-x-2 font-karla">
+            <ul className="relative flex w-full ml-10 lg:ml-36 gap-x-2 font-karla">
               <li className="group flex-1 shrink basis-0">
                 <div className="min-h-7.5 min-w-7.5 inline-flex w-full items-center align-middle text-sm">
                   <span className="border border-neutral-200 text-white size-7.5 flex flex-shrink-0 items-center justify-center rounded-full text-sm font-medium">
@@ -288,10 +296,10 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        <div className="flex items-center justify-around p-10 space-x-10">
-          <img src={Image3} className="w-6/12" alt="Responsive Photo" />
+        <div className="flex flex-col lg:flex-row items-center justify-around p-10 lg:space-x-10">
+          <img src={Image3} className="lg:w-6/12" alt="Responsive Photo" />
           <div className="flex flex-col items-center justify-center space-y-10">
-            <h2 className="font-semibold text-6xl text-[#83735B]">
+            <h2 className="font-semibold text-4xl lg:text-6xl text-[#83735B]">
               Over 33 Years of Real Estate Success
             </h2>
             <p className="text-xl font-karla text-[#83735B]">
@@ -305,12 +313,12 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-around p-10 space-x-10">
+        <div className="flex flex-col lg:flex-row items-center justify-around p-10 lg:space-x-10">
           <div className="flex flex-col items-center justify-center space-y-7">
-            <h2 className="font-semibold text-6xl text-[#83735B]">
+            <h2 className="font-semibold lg:text-6xl text-4xl text-[#83735B]">
               We Want To Create An Unforgettable Experience For You
             </h2>
-            <p className="text-xl font-karla text-[#83735B]">
+            <p className="text-xl font-karla text-[#83735B] pb-4 lg:pb-0">
               We combine data gained from your home’s Comparative Market
               Analysis with local market research to create a marketing plan
               designed to help you meet your selling goals. Your home’s
@@ -321,16 +329,20 @@ const Hero = () => {
               Hansen Partners provides both.
             </p>
           </div>
-          <img src={Image4} className="w-6/12" alt="Strategy Photo" />
+          <img src={Image4} className="lg:w-6/12" alt="Strategy Photo" />
         </div>
 
-        <img src={Image5} className="w-10/12 mx-auto" alt="Strategy Photo" />
-        <div className="flex items-center bg-[#737057] justify-around p-10 space-x-10">
+        <img
+          src={Image5}
+          className="w-10/12 mx-auto my-5"
+          alt="Strategy Photo"
+        />
+        <div className="flex items-center bg-[#737057] justify-around lg:p-10 space-x-10">
           <div className="flex flex-col items-center justify-center space-y-5">
             <h2 className="font-semibold text-6xl text-[#fffdf7]">
               The Hansen Partners Communications Tablet
             </h2>
-            <p className="text-xl font-karla text-[#fffdf7]">
+            <p className="text-xl p-4 font-karla text-[#fffdf7]">
               We combine data gained from your home’s Comparative Market
               Analysis with local market research to create a marketing plan
               designed to help you meet your selling goals. Your home’s
@@ -345,7 +357,7 @@ const Hero = () => {
 
         <section className="my-5">
           <h1 className="text-6xl text-[#83735B] text-center">Benefits</h1>
-          <ul className="list-outside list-disc ms-4 text-lg px-32 font-karla my-7">
+          <ul className="list-outside list-disc ms-4 text-lg px-24 lg:px-32 font-karla my-7">
             <li className="mb-2 text-[#83735B]">
               Review all documents and sign in the comfort of your home or
               anywhere.
@@ -398,8 +410,8 @@ const Hero = () => {
               internationally.
             </p>
           </div>
-          <section className="flex p-10 space-x-5">
-            <div className="space-y-5 w-6/12">
+          <section className="flex flex-col lg:flex-row lg:p-10 lg:space-x-5">
+            <div className="space-y-5 lg:w-6/12">
               <h4 className="text-3xl text-center">Local Exposure</h4>
               <p className="text-lg font-karla">
                 Through our partnership with Nextdoor, the private online social
@@ -410,7 +422,7 @@ const Hero = () => {
                 neighborhood.
               </p>
             </div>
-            <div className="space-y-5 w-6/12">
+            <div className="space-y-5 lg:w-6/12">
               <h4 className="text-3xl text-center">National Exposure</h4>
               <p className="text-lg font-karla">
                 We secure strategic positioning and enhancement on Realtor.com,
@@ -419,7 +431,7 @@ const Hero = () => {
                 property directly.
               </p>
             </div>
-            <div className="space-y-5 w-6/12">
+            <div className="space-y-5 lg:w-6/12">
               <h4 className="text-3xl text-center">International Exposure</h4>
               <p className="text-lg font-karla">
                 We secure strategic positioning and enhancement on Realtor.com,
@@ -435,7 +447,7 @@ const Hero = () => {
         </section>
 
         {/* State Partners Section */}
-        <section className="flex w-full justify-around">
+        <section className="flex flex-col lg:flex-row w-full justify-around">
           <div>
             <div className="flex items-center justify-evenly w-full my-6">
               <img src={state1} className="w-44" alt="" />
@@ -455,26 +467,28 @@ const Hero = () => {
               countries.
             </p>
 
-            <h2 className="text-center text-lg mt-15">
+            <h2 className="text-center text-lg lg:mt-15">
               Who&apos;s Who in Luxury Real Estate
             </h2>
-            <p className="text-center font-karla mt-20">
+            <p className="text-center font-karla lg:mt-20 mb-10 lg:mb-0">
               Who&apos;s Who in Luxury Real Estate is a global collection of
               luxury real estate brokers.
             </p>
           </div>
-          <img src={Image7} alt="luxury photo" className="w-5/12" />
+          <img src={Image7} alt="luxury photo" className="lg:w-5/12" />
         </section>
 
         {/* State section 2 */}
 
         <section className="flex w-full justify-around">
           <div>
-            <div className="flex items-center justify-evenly w-full ">
-              <img src={Image8} alt="luxury photo" className="w-5/12" />
-              <img src={state1} className="w-44" alt="" />
-              <img src={state2} className="w-44" alt="" />
-              <img src={state3} className="w-44" alt="" />
+            <div className="flex flex-col lg:flex-row items-center justify-evenly w-full ">
+              <img src={Image8} alt="luxury photo" className="lg:w-5/12" />
+              <div className="flex my-5">
+                <img src={state1} className="w-32 lg:w-44" alt="" />
+                <img src={state2} className="w-32 lg:w-44" alt="" />
+                <img src={state3} className="w-32 lg:w-44" alt="" />
+              </div>
             </div>
 
             <p className="p-10 text-lg">
@@ -496,7 +510,7 @@ const Hero = () => {
 
       {/* mockup */}
       <section className="p-5 mb-10">
-        <div className="mockup-window border p-10 bg-base-300">
+        <div className="mockup-window border lg:p-10 bg-base-300">
           <div className="flex justify-center h-full">
             <img
               className="w-full object-cover"
@@ -511,11 +525,11 @@ const Hero = () => {
         <img
           src={services}
           alt="services"
-          className="w-full h-auto brightness-75"
+          className="w-full h-screen brightness-75"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <h1 className="text-[#faf6ec] text-5xl  font-bold">Work with Us</h1>
-          <p className="text-center text-[#faf6ec] text-lg w-6/12 my-3 font-karla">
+          <p className="text-center text-[#faf6ec] text-lg w-6/12 lg:my-3 my-6 font-karla">
             With decades of experience in luxurious Tri Valley real estate, our
             team is here to ensure that your dreams are a reality. Let us guide
             you through your home buying journey, contact us today!
@@ -527,13 +541,13 @@ const Hero = () => {
       </div>
 
       {/* footer */}
-      <section className="w-full h-[500px] bg-[#737057]">
+      <section className="w-full lg:h-[500px] bg-[#737057]">
         <div className="text-[#faf6ec]">
           <div className="p-10 flex flex-col items-center space-y-9 justify-center">
             <h1 className="text-5xl font-medium text-center">
               Julie Hansen Partnership
             </h1>
-            <p className="font-karla text-lg w-5/12">
+            <p className="font-karla text-lg lg:w-5/12">
               An elite group of the East Bay’s most talented and visionary real
               estate professionals believed buyers and sellers deserved more
               from their real estate company. More service. More resources. More
@@ -541,7 +555,7 @@ const Hero = () => {
               should expect when they buy or sell their homes.
             </p>
           </div>
-          <div className="flex items-center justify-evenly mt-10">
+          <div className="flex flex-col lg:flex-row items-center justify-evenly mt-10 space-y-5">
             <div className="flex flex-col items-center space-y-6">
               <h2 className="text-xl font-semibold uppercase">Address</h2>
               <p className="text-lg font-karla">
@@ -557,7 +571,7 @@ const Hero = () => {
                 (925) 553-6707 <br /> luxuryhomesinwc@icloud.com
               </p>
             </div>
-            <section className="space-x-2">
+            <section className="space-x-2 space-y-2 lg:space-y-0 py-3 lg:py-0">
               <button
                 className="btn btn-circle btn-gradient bg-[#f3efe4]"
                 aria-label="Circle Gradient Icon Button"
@@ -604,7 +618,7 @@ const Hero = () => {
       </section>
 
       {/* footer 2 */}
-      <section className="w-full flex items-center justify-center h-[500px] bg-[#faf6ec]">
+      <section className="w-full flex items-center justify-center lg:h-[500px] bg-[#faf6ec]">
         <div className="text-[#737057] h-full flex flex-col space-y-5 items-center justify-center">
           <div className="py-5 px-10 flex flex-col items-center space-y-4 justify-center">
             <h1 className="text-5xl font-medium text-center">Newsletter</h1>
@@ -637,7 +651,7 @@ const Hero = () => {
             <img src={housing} alt="housing" className="w-10" />
             <img src={serenoMini} alt="serenoMini" className="w-10" />
           </div>
-          <div className="flex items-center justify-between gap-10">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <h2 className="text-lg">
               Website Designed & Developed by Luxury Presence
             </h2>
