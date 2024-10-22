@@ -34,8 +34,10 @@ const Hero = () => {
           className="w-full lg:w-6/12"
           alt="Responsive Photo"
         />
-        <div className="flex flex-col items-center justify-center space-y-3">
-          <h2 className="font-semibold text-6xl text-[#83735B]">Responsive</h2>
+        <div className="flex flex-col items-center justify-center p-5 space-y-3">
+          <h2 className="font-semibold text-5xl lg:text-6xl font-playfair text-[#83735B]">
+            Responsive
+          </h2>
           <p className="text-2xl font-karla text-[#83735B]">
             I am always available via phone, text, or email.
           </p>
@@ -43,8 +45,10 @@ const Hero = () => {
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-around p-10 lg:space-x-10">
         <div className="flex flex-col items-center justify-center space-y-3">
-          <h2 className="font-semibold text-6xl text-[#83735B]">Syndication</h2>
-          <p className="text-2xl font-karla text-[#83735B]">
+          <h2 className="font-semibold text-5xl lg:text-6xl text-[#83735B] font-playfair">
+            Syndication
+          </h2>
+          <p className="text-2xl font-karla text-[#83735B] pb-4 lg:pb-0">
             I market your property locally, nationally, and internationally
           </p>
         </div>
@@ -164,7 +168,9 @@ const Hero = () => {
         swipeable
       >
         <div className="bg-[#737057] w-full h-full p-4 flex items-center justify-center">
-          <h1 className="text-5xl text-[#faf6ec]">Decor Guidance</h1>
+          <h1 className="text-5xl text-[#faf6ec] font-playfair">
+            Decor Guidance
+          </h1>
         </div>
         <img
           src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/ghtq7jtce7tsgdjtosrs/image-025"
@@ -172,7 +178,9 @@ const Hero = () => {
           alt=""
         />
         <div className="bg-[#faf6ec] w-full h-full p-4 flex flex-col justify-around items-center">
-          <h1 className="text-5xl text-[#737057]">My Staging Expertise</h1>
+          <h1 className="text-5xl font-playfair p-3 lg:p-0 text-[#737057]">
+            My Staging Expertise
+          </h1>
           <ul className="text-[#737057] text-xl space-y-3">
             <li className="">Uncluitter and organize your home</li>
             <li>Neatly arrange drawers and cabinets</li>
@@ -186,7 +194,9 @@ const Hero = () => {
           className="w-full h-full"
         />
         <div className="bg-[#faf6ec] w-full h-full p-4 flex items-center justify-center">
-          <h1 className="text-5xl text-[#737057]">Intentional Layout</h1>
+          <h1 className="text-5xl text-[#737057] font-playfair">
+            Intentional Layout
+          </h1>
         </div>
         <img
           src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/lpaq7euqjebackcuwsdu/image-024"
@@ -202,7 +212,7 @@ const Hero = () => {
             className="w-full lg:h-full h-screen  brightness-50"
           />
           <div className="absolute inset-0 flex flex-col space-y-10 items-center justify-center">
-            <p className="text-white text-5xl text-center font-bold">
+            <p className="text-white text-5xl text-center font-bold font-playfair">
               The Selling Process
             </p>
             <div className="grid grid-cols-3 font-karla grid-rows-2 gap-4 p-4 text-center">
@@ -238,7 +248,7 @@ const Hero = () => {
             className="w-full lg:h-full h-screen brightness-50"
           />
           <div className="absolute inset-0 flex flex-col space-y-10 items-center justify-center overflow-hidden">
-            <p className="text-white text-5xl font-bold text-center">
+            <p className="text-white text-5xl font-bold text-center font-playfair">
               The Buying Process
             </p>
             <ul className="relative flex w-full ml-2 lg:ml-36 gap-x-2 p-4 font-karla">
@@ -301,7 +311,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center justify-around p-10 lg:space-x-10">
           <img src={Image3} className="lg:w-6/12" alt="Responsive Photo" />
           <div className="flex flex-col items-center justify-center space-y-10">
-            <h2 className="font-semibold text-4xl lg:text-6xl text-[#83735B]">
+            <h2 className="font-semibold text-4xl lg:text-6xl text-[#83735B] font-playfair pt-4 lg:pt-0">
               Over 33 Years of Real Estate Success
             </h2>
             <p className="text-xl font-karla text-[#83735B]">
@@ -317,7 +327,7 @@ const Hero = () => {
 
         <div className="flex flex-col lg:flex-row items-center justify-around p-10 lg:space-x-10">
           <div className="flex flex-col items-center justify-center space-y-7">
-            <h2 className="font-semibold lg:text-6xl text-4xl text-[#83735B]">
+            <h2 className="font-semibold lg:text-6xl text-4xl font-playfair text-[#83735B]">
               We Want To Create An Unforgettable Experience For You
             </h2>
             <p className="text-xl font-karla text-[#83735B] pb-4 lg:pb-0">
@@ -341,7 +351,7 @@ const Hero = () => {
         />
         <div className="flex items-center bg-[#737057] justify-around lg:p-10 space-x-10">
           <div className="flex flex-col items-center justify-center space-y-5">
-            <h2 className="font-semibold text-5xl text-center lg:text-6xl text-[#fffdf7]">
+            <h2 className="font-semibold text-5xl font-playfair text-center lg:text-6xl text-[#fffdf7]">
               The Hansen Partners Communications Tablet
             </h2>
             <p className="text-xl p-4 font-karla text-[#fffdf7]">
@@ -358,7 +368,9 @@ const Hero = () => {
         </div>
 
         <section className="my-5">
-          <h1 className="text-6xl text-[#83735B] text-center">Benefits</h1>
+          <h1 className="text-6xl text-[#83735B] text-center font-playfair">
+            Benefits
+          </h1>
           <ul className="list-outside list-disc ms-4 text-lg px-10 lg:px-32 font-karla my-7">
             <li className="mb-2 text-[#83735B]">
               Review all documents and sign in the comfort of your home or
@@ -400,7 +412,7 @@ const Hero = () => {
         </section>
 
         <section className="my-5">
-          <h1 className="text-5xl text-[#737057] text-center font-semibold">
+          <h1 className="text-5xl text-[#737057] font-playfair text-center font-semibold">
             We Market Your Home to World
           </h1>
           <div className="font-karla text-[#737057] flex flex-col my-10 items-center justify-center">
@@ -414,7 +426,9 @@ const Hero = () => {
           </div>
           <section className="flex flex-col lg:flex-row lg:p-10 p-12 lg:space-x-5 space-y-10 lg:space-y-0">
             <div className="space-y-5 lg:w-6/12">
-              <h4 className="text-3xl text-center">Local Exposure</h4>
+              <h4 className="text-3xl text-center font-playfair">
+                Local Exposure
+              </h4>
               <p className="text-lg font-karla">
                 Through our partnership with Nextdoor, the private online social
                 network now used in over 80% of U.S. neighborhoods and virtually
@@ -425,7 +439,9 @@ const Hero = () => {
               </p>
             </div>
             <div className="space-y-5 lg:w-6/12">
-              <h4 className="text-3xl text-center">National Exposure</h4>
+              <h4 className="text-3xl text-center font-playfair">
+                National Exposure
+              </h4>
               <p className="text-lg font-karla">
                 We secure strategic positioning and enhancement on Realtor.com,
                 Trulia, and Zillow, driving more consumers to your home and
@@ -434,7 +450,9 @@ const Hero = () => {
               </p>
             </div>
             <div className="space-y-5 lg:w-6/12">
-              <h4 className="text-3xl text-center">International Exposure</h4>
+              <h4 className="text-3xl text-center font-playfair">
+                International Exposure
+              </h4>
               <p className="text-lg font-karla">
                 We secure strategic positioning and enhancement on Realtor.com,
                 Trulia, and Zillow, driving more consumers to your home and
@@ -456,7 +474,7 @@ const Hero = () => {
               <img src={state2} className="w-44" alt="" />
               <img src={state3} className="w-44" alt="" />
             </div>
-            <h2 className="text-xl font-karla p-5 mt-10 text-center">
+            <h2 className="text-xl font-playfair p-5 mt-10 text-center">
               Leading Real Estate Companies of The World® &amp; Luxury
               Portfolio International
             </h2>
@@ -530,7 +548,9 @@ const Hero = () => {
           className="w-full h-screen brightness-75"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-[#faf6ec] text-5xl  font-bold">Work with Us</h1>
+          <h1 className="text-[#faf6ec] text-5xl font-playfair font-bold">
+            Work with Us
+          </h1>
           <p className="text-center text-[#faf6ec] text-lg w-6/12 lg:my-3 my-6 font-karla">
             With decades of experience in luxurious Tri Valley real estate, our
             team is here to ensure that your dreams are a reality. Let us guide
@@ -546,7 +566,7 @@ const Hero = () => {
       <section className="w-full lg:h-[500px] bg-[#737057]">
         <div className="text-[#faf6ec]">
           <div className="p-10 flex flex-col items-center space-y-9 justify-center">
-            <h1 className="text-5xl font-medium text-center">
+            <h1 className="text-5xl font-medium font-playfair text-center">
               Julie Hansen Partnership
             </h1>
             <p className="font-karla text-lg lg:w-5/12">
@@ -559,14 +579,16 @@ const Hero = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-evenly mt-10 space-y-5">
             <div className="flex flex-col items-center space-y-6">
-              <h2 className="text-xl font-semibold uppercase">Address</h2>
+              <h2 className="text-xl font-semibold uppercase font-playfair">
+                Address
+              </h2>
               <p className="text-lg text-center font-karla">
                 4733 Chabot Drive #100 Pleasanton <br /> CA 94588 Julie
                 Hansen-Orvis | CA DRE# 00934447
               </p>
             </div>
             <div className="flex flex-col items-center space-y-6">
-              <h2 className="text-xl font-semibold uppercase">
+              <h2 className="text-xl font-semibold font-playfair uppercase">
                 Contact Information
               </h2>
               <p className="text-lg font-karla">
@@ -623,7 +645,9 @@ const Hero = () => {
       <section className="w-full flex items-center justify-center lg:h-[500px] bg-[#faf6ec]">
         <div className="text-[#737057] h-full flex flex-col space-y-5 items-center justify-center">
           <div className="py-5 px-10 flex flex-col items-center space-y-4 justify-center">
-            <h1 className="text-5xl font-medium text-center">Newsletter</h1>
+            <h1 className="text-5xl font-medium text-center font-playfair">
+              Newsletter
+            </h1>
             <p className="font-karla text-lg">
               Subscribe to our Newsletter for latest news and updates. Stay
               tuned!
@@ -645,7 +669,7 @@ const Hero = () => {
               </span>
             </span>
           </label>
-          <button className="btn btn-lg waves waves-light bg-[#737057] hover:bg-[#faf6ec] text-[#faf6ec] hover:text-[#737057]">
+          <button className="btn font-playfair btn-lg waves waves-light bg-[#737057] hover:bg-[#faf6ec] text-[#faf6ec] hover:text-[#737057]">
             Subscribe
           </button>
           <div className="flex items-center justify-center space-x-10 py-7">
@@ -654,7 +678,7 @@ const Hero = () => {
             <img src={serenoMini} alt="serenoMini" className="w-10" />
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <h2 className="text-lg text-center">
+            <h2 className="text-lg text-center font-playfair">
               Website Designed & Developed by Luxury Presence
             </h2>
             <h2 className="text-lg">Copyright &copy;2024 | Privacy Policy </h2>
